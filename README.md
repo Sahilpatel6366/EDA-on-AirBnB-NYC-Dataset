@@ -1,87 +1,90 @@
-🏙️ Airbnb NYC Data Analysis – EDA Project
-📌 Project Overview
+# 🏙️ Airbnb NYC Data Analysis – EDA Project
 
-This project performs Exploratory Data Analysis (EDA) on the Airbnb New York City dataset to uncover key trends, patterns, and insights about listings, pricing, availability, and customer preferences.
+## 📌 Project Overview
+This project performs **Exploratory Data Analysis (EDA)** on the **Airbnb New York City** dataset to uncover trends, patterns, and insights about listings, pricing, availability, and customer preferences.
 
-The analysis aims to understand how location, property type, and other factors influence price and occupancy rates across different boroughs of NYC.
+The goal is to understand how **location**, **property type**, and other factors influence **pricing** and **occupancy rates** across different NYC boroughs.
 
-🛠️ Tools & Libraries Used
+---
 
-Python → Data analysis & visualization
+## 🛠️ Tools & Libraries Used
 
-Pandas → Data cleaning & manipulation
+- **Python** – Data analysis and visualization  
+- **Pandas** – Data cleaning and manipulation  
+- **NumPy** – Numerical operations  
+- **Matplotlib** and **Seaborn** – Data visualization  
+- **Jupyter Notebook** – Interactive analysis
 
-NumPy → Numerical operations
+---
 
-Matplotlib & Seaborn → Data visualization
+## 📂 Dataset Information
 
-Jupyter Notebook → Interactive analysis environment
+- **Dataset Name:** Airbnb NYC Listings Dataset  
+- **Records:** ~48,000+ listings  
+- **Features:** 16 attributes  
 
-📂 Dataset Information
+### 🧾 Key Columns
+| Column | Description |
+|---------|-------------|
+| neighbourhood_group | Borough name – Manhattan, Brooklyn, Queens, Bronx, Staten Island |
+| room_type | Type of listing – Entire home/apt, Private room, Shared room |
+| price | Nightly price of the listing |
+| availability_365 | Number of available days per year |
+| number_of_reviews | Total reviews received |
+| latitude, longitude | Coordinates for mapping listings |
 
-Dataset Name: Airbnb NYC Listings Dataset
-Records: ~48,000+ listings
-Features: 16 attributes
+---
 
-🧾 Key Columns
-Column	Description
-neighbourhood_group	Borough name – Manhattan, Brooklyn, Queens, Bronx, Staten Island
-room_type	Type of listing – Entire home/apt, Private room, Shared room
-price	Nightly price of the listing
-availability_365	Number of available days per year
-number_of_reviews	Total number of reviews received
-latitude, longitude	Coordinates for geospatial mapping
-🔍 EDA Process
-1️⃣ Data Cleaning & Preprocessing
+## 🔍 EDA Process
 
-Checked and handled missing values and duplicates
+### 1️⃣ Data Cleaning & Preprocessing
+- Checked and handled missing values and duplicates  
+- Removed outliers (extreme prices, unrealistic availability values)  
+- Converted incorrect data types  
 
-Removed outliers (e.g., extreme prices, unrealistic availability values)
+### 2️⃣ Univariate Analysis
+- Price distribution  
+- Frequency of listings by neighbourhood group and room type  
 
-Fixed incorrect data types
+### 3️⃣ Bivariate & Multivariate Analysis
+- Price variations by neighbourhood group and room type  
+- Correlation between reviews, availability, and price  
 
-2️⃣ Univariate Analysis
+### 4️⃣ Geospatial Analysis
+- Visualized listings on NYC map using latitude and longitude  
+- Identified price hotspots
 
-Price distribution
+---
 
-Frequency of listings by neighbourhood group and room type
+## 📊 Key Insights
 
-3️⃣ Bivariate & Multivariate Analysis
+- 🏙️ **Manhattan** has the highest average prices, while **Brooklyn** offers many moderately priced listings.  
+- 🏡 **Entire homes/apartments** are the most expensive, while **shared rooms** are the cheapest.  
+- 💎 Certain neighbourhoods show price anomalies, indicating **premium or luxury listings**.  
+- 📆 Many listings are available year-round, showing **professional hosting activity**.
 
-Price vs Neighbourhood group & Room type
+---
 
-Correlation between reviews, availability, and price
+## 📈 Visualizations Included
 
-4️⃣ Geospatial Analysis
+- Price distribution histograms  
+- Room type vs price boxplots  
+- Neighbourhood group comparison bar charts  
+- Correlation heatmap  
+- Geospatial scatter plot of listings across NYC
 
-Visualized listings on an NYC map using latitude & longitude
+---
 
-Identified price hotspots and high-demand areas
+## 💡 Business Impact
 
-📊 Key Insights
+| Stakeholder | Benefit |
+|--------------|----------|
+| **Hosts** | Price listings competitively based on neighborhood and property type |
+| **Travelers** | Identify affordable areas and property types |
+| **Airbnb (Platform)** | Detect unusual pricing or availability patterns |
 
-🏙️ Manhattan has the highest average prices, while Brooklyn offers many moderately priced listings.
+---
 
-🏡 Entire homes/apartments are the most expensive, whereas shared rooms are the cheapest.
+## 📁 Repository Structure
 
-💎 Certain neighborhoods show price anomalies, indicating premium or luxury listings.
 
-📆 A large number of listings are available year-round, suggesting professional hosts dominate the market.
-
-📈 Visualizations Included
-
-📊 Price distribution histograms
-
-📦 Room type vs price boxplots
-
-🏘️ Neighbourhood group comparison bar charts
-
-🔥 Correlation heatmap
-
-🗺️ Geospatial scatter plot of listings across NYC
-
-💡 Business Impact
-Stakeholder	Benefit
-Hosts	Price their listings competitively based on neighborhood & property type
-Travelers	Identify affordable areas and property types
-Airbnb (Platform)	Detect unusual pricing or availability patterns to ensure market balance
