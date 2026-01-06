@@ -85,6 +85,5 @@ The goal is to understand how **location**, **property type**, and other factors
 
 ---
 
-## 📁 Repository Structure
 
 
